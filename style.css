@@ -136,6 +136,13 @@ nav button {
     margin: auto;
     color: white;
     align-items: center;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1300px) {
+    body {
+        background-color: red;
+    }
 }
 
 .secImg {
@@ -143,7 +150,7 @@ nav button {
 }
 
 .secImg img {
-    width: 30vw;
+    width: 456px;
     position: relative;
     top: 0;
     z-index: 10;
@@ -152,8 +159,14 @@ nav button {
 .secImg video {
     width: 21.8vw;
     position: absolute;
-    top: 74px;
-    right: 66px;
+    top: 13vh;
+    right: 3.65vw;
+}
+
+section.first>div {
+    display: flex;
+    flex-direction: column;
+    padding: 34px 0;
 }
 
 .first>div :first-child {
@@ -167,7 +180,7 @@ nav button {
     font-size: 24px;
 }
 
-.faq {    
+.faq {
     background-color: black;
     color: white;
     padding: 34px;
@@ -182,7 +195,7 @@ nav button {
     font-size: 24px;
     display: flex;
     justify-content: space-between;
-    background-color: gray;    
+    background-color: gray;
     padding: 24px;
     max-width: 60vw;
     margin: 34px auto;
@@ -212,7 +225,7 @@ footer .questions {
     color: white;
 }
 
-.footer a{
+.footer a {
     font-size: 14px;
     color: white;
 }
